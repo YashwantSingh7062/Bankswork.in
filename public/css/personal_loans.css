@@ -1,0 +1,56 @@
+#header-personal-loans{
+    height:140vh;
+}
+#header-personal-loans{
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url('../../Images/first_carousel/fourth.jpg');
+    background-position:center;
+    background-size:cover;
+}
+.registration-form{
+    width:100%;
+}
+.registration-form label{
+    font-weight:600;
+    color:#00d2d3;
+    font-size:15px;
+}
+.step-1{
+    color:white;
+    background:#00d2d3;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    border-radius:50%;
+}
+.header-personal-content{
+    color:white;
+}
+/* SECTION REGISTRATION STEPS */
+.registration-steps{
+    background:rgba(238, 238, 238, 0.4);
+    width:100%;
+}
+.step-registration-icon{
+    height:70px;
+    width:70px;
+    border:5px solid #00d2d3;
+    border-radius:50%;
+    background:#00d2d3;
+    line-height:60px;
+    font-size:30px;
+    color:white;
+    margin:0px auto;
+}
+
+/* personal_loans_elgible_page */
+.personal-eligible{
+    background:linear-gradient(#2e86de,#0abde3,#48dbfb);
+}
+.logo a{
+    color:white;
+    margin-top:2px;
+}
+.logo i{
+    font-size:40px; 
+}
