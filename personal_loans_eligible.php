@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="row pb-5">
-                <div class="col-12 col-md-6 offset-md-3">
+                <div class="col-12 col-md-6 offset-md-3 p-0">
                     <div class="registration-form card">
                        <div class="card-body">
                           <div class="step-1">
@@ -53,6 +53,10 @@
                                 <div class="form-group">
                                     <label for="pan">PAN Number</label>
                                     <input type="number" name="pan" id="pan" placeholder="EX.AXTER873I"class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="pan_scan">PAN Card Scan</label><br>
+                                    <input type="file" name="pan_scan" id="pan_scan" accept="image/png,image/jpg,image/jpeg" />
                                 </div>
                                 <div class="form-group">
                                     <label for="salary">How do you get your salary?</label><br>
@@ -82,6 +86,11 @@
                                             <input type="text" name="state" id="state" placeholder="State "class="form-control" />
                                         </div>
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="proof">Proof of Residence</label><br>
+                                    <input type="file" accept="image/jpeg,image/jpg,image/png" id="proof" name="proof" /><br>
+                                    <small class="text-muted">Ration card, Driving license, Voter id, Utility bills (Electricity , Water , Gas ), Passport</small>
                                 </div>
                                 <div class="form-group">
                                     <h5 class="text-muted">Note: Please make sure these details are correct so that we can verify your credit score properly and get you the best offers.</h5>

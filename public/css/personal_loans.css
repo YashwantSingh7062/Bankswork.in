@@ -1,48 +1,46 @@
 #header-personal-loans{
-    height:140vh;
-}
-#header-personal-loans{
+    height:120vh;
     background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url('../../Images/first_carousel/fourth.jpg');
     background-position:center;
     background-size:cover;
+    background-attachment:fixed;
+}
+#header-personal-loans:after,#header-home-loans:after{
+    content:'';
+    height:120vh;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    clip-path: polygon(0 85%, 0% 100%, 100% 100%);
+    background:#dff9fb;
+}
+#header-personal-loans .container,#header-home-loans .container{
+    padding-top:180px;
+    color:white;
 }
 .registration-form{
-    width:100%;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-50%);   
 }
 .registration-form label{
     font-weight:600;
-    color:#00d2d3;
+    color:black;
     font-size:15px;
 }
-.step-1{
+.registration-form .input-group-prepend{
     color:white;
-    background:#00d2d3;
-    width:30px;
-    height:30px;
-    text-align:center;
-    line-height:30px;
-    border-radius:50%;
-}
-.header-personal-content{
-    color:white;
-}
-/* SECTION REGISTRATION STEPS */
-.registration-steps{
-    background:rgba(238, 238, 238, 0.4);
-    width:100%;
-}
-.step-registration-icon{
-    height:70px;
-    width:70px;
-    border:5px solid #00d2d3;
-    border-radius:50%;
-    background:#00d2d3;
-    line-height:60px;
-    font-size:30px;
-    color:white;
-    margin:0px auto;
+    background:aqua;
 }
 
+/*Personal loans details*/
+.personal-loan-detail,.home-loan-details{
+    padding-top:150px;
+    background:#dff9fb;
+    color:black;
+}
 /* personal_loans_elgible_page */
 .personal-eligible{
     background:linear-gradient(#2e86de,#0abde3,#48dbfb);

@@ -7,117 +7,100 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <link rel="stylesheet" type="text/css" href="public/css/personal_loans.css">
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include 'partials/nav.php'; ?> 
     <?php include 'partials/sidebar.php' ?>
     <header id="header-personal-loans">
-      <div class="container">
-          <div class="row p-md-5">
-              <div class="col-12 col-md-6 py-md-5 mt-5">
-                   <div class="header-personal-content mt-4">
-                       <h2 class="display-4">Personal loans starting at 10.75%.</h2>
-                       <p>Apply for an online personal loan at low interest rates and get instant approval.</p>
-                   </div>
-              </div>
-              <div class="col-12 col-md-6 p-0 p-md-5">
-                  <div class="registration-form card rellax" data-rellax-speed="-3">
-                       <div class="card-body">
-                          <div class="step-1">
-                              1
-                          </div> <h4>Basic Details</h4>
-                           <form action="personal_loans_eligible.php" method="post">
-                                <div class="form-group">
-                                    <label for="name">Full name (As per PAN Card)</label>
-                                    <input type="text" name="name" id="name" placeholder="Full Name" class="form-control"  />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="text" name="email" id="email" placeholder="Email" class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="pin">Current Residence PIN Code</label>
-                                    <input type="number" name="pin" id="pin" placeholder="PIN" class="form-control" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="emp_type">Employment Type</label>
-                                    <select name="emp_type" id="emp_type" class="form-control">
-                                        <option disabled selected>Select Employment</option>
-                                        <option value="Salaried">Salaried</option>
-                                        <option value="Self Employed">Self Employed</option>
-                                        <option value="Self Employed DR/CA">Self Employed DR/CA</option>
-                                    </select>
-                                </div>
-                               <div class="form-group">
-                                    <label for="comp_name">Current Company Name</label>
-                                    <input type="text" name="comp_name" id="comp_name" placeholder="Company Name" class="form-control"  />
-                                </div>
-                                <div class="form-group">
-                                    <label for="in-hand-salary">Monthly in-hand-salary</label>
-                                    <input type="number" name="in-hand-salary" id="in-hand-salary" placeholder="Amount" class="form-control"/>
-                                </div>
-                               <div class="form-group">
-                                    <label for="phone">Mobile Number</label>
-                                    <input type="number" name="phone" id="phone" placeholder="Mobile Number" class="form-control"/>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn my-primary-btn btn-block" value="Next"/>
-                                </div>
-                            </form>
-                       </div>
-                    </div>
-              </div>
-          </div>
-      </div>
-      
-        
+      <div class="container text-center rellax" data-rellax-speed="-4">
+              <h1 class="display-4">
+                  Personal loans starting at 10.75%
+              </h1>
+              <p>Apply for an online personal loan at low interest rates and get instant approval.</p>
+      </div>   
     </header>
-    <?php include 'partials/login-modal.php'; ?>
-    <section class="registration-steps pb-5">
-      <div class="container">
-          <div class="steps-header text-center">
-            <h1 class="display-4">How it Works</h1>    
-            
-        </div>
-        <div class="steps-icon my-5">
-            <div class="row">
-                <div class="col-8 step-line"></div>
-            </div>
-            <div class="row text-center">
-                <div class="col-4">
-                    <div class="step-registration-icon">1</div>
-                </div>
-                <div class="col-4">
-                    <div class="step-registration-icon">2</div>
-                </div>
-                <div class="col-4">
-                    <div class="step-registration-icon">3</div>
-                </div>
-            </div>
-            <div class="row my-5 text-center">
-                <div class="col-12 col-md-4 py-4 py-md-0">
-                    <h5>Quick Register</h5>
-                    <p>Fill the simple form</p>
-                </div>
-                <div class="col-12 col-md-4 py-4 py-md-0">
-                    <h5>Select multiple offers</h5>
-                    <p>Lists of offers form multiple banks</p>
-                </div>
-                <div class="col-12 col-md-4 py-4 py-md-0">
-                    <h5>Apply</h5>
-                    <p>Quick apply less than 2 minutes</p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section>
-        <div class="container pad30t pad30b">
+    <div class="container registration-form px-md-5">
+       <div class="card rellax mx-md-5" data-rellax-speed="2">
+          <div class="card-header p-md-4">
+              <h1 class="display-4 text-center"><i class="fas fa-user-edit" style="font-size:50px;"></i> Personal Loan Registration</h1>
+          </div>
+           <div class='card-body'>
+               <form action="personal_loans_eligible.php" method="post">
+                   <div class="form-group col-auto">
+                      <label for="name">Full Name(As per PAN Card)</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
+                        </div>
+                        <input type="text" name="name" id="name" placeholder="Full Name" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group col-auto">
+                      <label for="phone">Mobile Number</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
+                        </div>
+                        <input type="number" name="phone" id="phone" placeholder="Mobile Number" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group col-auto">
+                      <label for="email">Email Id</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">@</div>
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="Ex. JhonDoe@gmail.com" class="form-control" />
+                      </div>
+                   </div>
+                   <div class="form-group col-auto">
+                      <label for="occupation">Occupation</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-suitcase"></i></div>
+                        </div>
+                       <select name="occupation" id="occupation" class="form-control">
+                           <option selected disabled>---Select Occupation----</option>
+                           <option value="Self Employed">Self Employed</option>
+                           <option value="Salaried">Salaried</option>
+                       </select>
+                       </div> 
+                   </div>
+                   <div class="form-group col-auto">
+                      <label for="salary">Salary Amount</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
+                        </div>
+                        <input type="number" name="salary" id="salary" placeholder="Amount" class="form-control" />
+                      </div>
+                   </div>
+                   <div class="form-group col-auto">
+                      <label for="pin">PIN Code</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-map-pin"></i></div>
+                        </div>
+                        <input type="number" name="pin" id="pin" placeholder="PIN Code" class="form-control" />
+                      </div>
+                   </div>
+                   <div class="form-group col-auto">
+                      <label for="aadhar">Aadhar card scan</label><br>
+                       <input type="file" name="aadhar" id="aadhar"/>
+                   </div>
+                   <div class="form-group col-auto">
+                       <input type="submit" class="btn my-primary-btn btn-block"/>
+                   </div> 
+                </form>
+           </div>
+       </div>
+    </div>
+    <?php include 'partials/login-modal.php'; ?>    
+    <section class="personal-loan-detail">
+        <div class="container py-5">
       <h2 class="newh2">Personal Loan – Low interest rate personal loans from a wide range of lenders</h2>
       <p class="newp">
             Personal loans are an unsecured form of credit that is popular to meet immediate requirements. It is multi-purpose in nature and therefore can be used for various purposes including wedding, home renovation, travel purposes and more. Moreover, there is no restriction for the amount borrowed and can be used for any purpose they want. In fact, a personal loan can help you build your credit faster when compared with other forms of credit. This is because of the risk it carries due to being unsecured.

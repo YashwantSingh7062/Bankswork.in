@@ -40,7 +40,7 @@
         <div class="header-content">
             <h1 class="display-4">Personal Loans with rates starting at 10.75%</h1>
             <p class="lead mt-3">Loans for everyone</p>
-            <a href="personal_loans.php" class="btn btn-lg my-primary-btn mt-5 py-2 px-4 py-md-3 px-md-5">Find my loans <i class="fas fa-angle-double-right"></i></a>
+            <a href="personal_loans.php" class="btn btn-lg btn-outline-primary mt-5 py-2 px-4 py-md-3 px-md-5">Find my loans <i class="fas fa-angle-double-right"></i></a>
         </div>
     </header>
     
@@ -259,6 +259,55 @@
         </div>
     </section>
     
+    <!-- SECTION PRODUCT -->
+    <section class="section-products">
+        <div class="container">
+           <div class="row mb-3">
+               <div class="col-12">
+                   <h3>Products</h3>
+               </div>
+           </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-body text-center">
+                            <div class="product-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h2>Personal Loan</h2>
+                            <p>Apply for personal loan easily.</p>
+                            <a href="personal_loans.php" class="btn  my-primary-btn py-2 px-4 my-3">Apply Now <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-body text-center">
+                            <div class="product-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h2>Home Loan</h2>
+                            <p>Apply for home loan.</p>
+                            <a href="personal_loans.php" class="btn btn-outline-primary py-2 px-4 my-3">Apply Now <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-body text-center">
+                            <div class="product-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <h2>Mortgage Loan</h2>
+                            <p>Apply for Mortgage loan.</p>
+                            <a href="personal_loans.php" class="btn btn-outline-primary py-2 px-4 my-3">Apply Now <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- SECTION PARTNERS -->
     <section class="section-partners">
         <div class="container">
@@ -317,14 +366,35 @@
      <!-- FOOTER -->
      <footer>
            <div class="container">
-              <div class="footer-links">
-                  <div class="row py-2">
-                      <div class="col-12 col-md-2 offset-md-2 my-2 "><a href="#">About Us</a></div>
-                      <div class="col-12 col-md-2 my-2 "><a href="#">Contact Us</a></div>
-                      <div class="col-12 col-md-2 my-2 "><a href="#">Privacy Policy</a></div>
-                      <div class="col-12 col-md-2 my-2 "><a href="#">Terms &amp; Conditions</a></div>
-                   </div>
-              </div>
+             <div class="row pt-3 pb-2">
+                <div class="col-12 col-md-4">
+                    <h5>YashwantSingh.com</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mx-2"><i class="fab fa-facebook-f"></i></li>
+                        <li class="mx-2"><i class="fab fa-linkedin-in"></i></li>
+                        <li class="mx-2"><i class="fab fa-github"></i></li>
+                    </ul>
+                    <a href="#header" class="btn my-primary-btn">Get Started</a>
+                </div>
+                 <div class="col-12 col-md-4">
+                     <div class="footer-links">
+                         <ul class="list-unstyled">
+                             <li><a href="about_us.php">About Us</a></li>
+                             <li><a href="#">Contact Us</a></li>
+                             <li><a href="privacy_policy.php">Privacy Policy</a></li>
+                             <li><a href="terms&Condition.php">Terms &amp; conditions</a></li>
+                             <li><a href=""></a></li>
+                         </ul>
+                      </div>
+                 </div>
+                 <div class="col-12 col-md-4">
+                     <h6><u>Get In Touch</u></h6>
+                     <ul class="list-unstyled">
+                         <li><i class="fas fa-map-marker-alt"></i> 201, Ganga Sagar Scheme, Vaishali Nagar, Jaipur, Rajasthan-302021</li>
+                         <li><i class="fas fa-envelope"></i> yashwantsingh7062@gmail.com</li>
+                     </ul>
+                 </div>
+             </div>
                 <div class="footer-description">
                     <div class="row">
                        <div class="col-12 text-center mt-2">
