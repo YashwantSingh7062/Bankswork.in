@@ -7,19 +7,19 @@
                        <a href="index.php"><i class="fab fa-slack"></i>LOGO</a> 
                     </div>
                 </div>
-                <div class="col-2 col-md-8">
+                <div class="col-2 col-md-7">
                     <ul class="navbar-navul">
                         <li><a href="#">Loans <i class="fas fa-angle-down"></i></a>
                             <ul>
                                 <li><a href="personal_loans.php">Personal Loans</a></li>
                                 <li><a href="home_loans.php">Home Loans</a></li>
-                                <li><a href="#">Mortgage Loans</a></li>
-                                <li><a href="#">Fresh Vehicle Finance</a></li>
-                                <li><a href="#">Re-finance vehicle Loans</a></li>
+                                <li><a href="mortgage_loan.php">Mortgage Loans</a></li>
+                                <li><a href="fresh_vehicle_finance.php">Fresh Vehicle Finance</a></li>
+                                <li><a href="Re-finance_vehicle_loan.php">Re-finance vehicle Loans</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact_us.php">Contact Us</a></li>
+                        <li><a href="about_us.php">About Us</a></li>
                         <li><a href="#">24*7 Helpline</a></li>
                     </ul>
                 </div>

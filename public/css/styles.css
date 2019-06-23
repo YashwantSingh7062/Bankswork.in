@@ -3,10 +3,10 @@
     padding:0px;
     box-sizing:border-box;
     font-size:14px;
+    scroll-behavior:smooth;
 }
 body{
     overflow-x:hidden;
-    scroll-behavior:smooth;
 }
 .row{
     margin:0px;
@@ -49,7 +49,19 @@ h3{
     cursor:pointer;
     font-size:25px;
 }
-
+/* CREDIT MODAL */
+.credit-modal-header{
+    display:inline-block;
+}
+.credit-modal-header i{
+    font-size:60px;
+    color:#2ecc71;
+    margin-bottom:5px;
+}
+.credit-modal-header span.close{
+    font-size:40px;
+    cursor:pointer;
+}
 /* UP NAVIGATOR BUTTON */
 .up-navigator-button{
     height:50px;
@@ -72,12 +84,12 @@ h3{
 /* header */
 header{
     width:100%;
-    height:100vh;
+    height:80vh;
 }
 #header:after{
     content:'';
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
-    height:100vh;
+    height:80vh;
     width:100%;
     position:absolute;
     top:0;
@@ -164,7 +176,7 @@ nav .menu-bars{
 .sidebar{
     height:100vh;
     width:375px;
-    background:linear-gradient(#1B9CFC,#0abde3,#48dbfb);;
+    background:linear-gradient(#1B9CFC,#0abde3,#48dbfb);
     position:fixed;
     right:-700px;
     top:0;
@@ -210,7 +222,28 @@ nav .menu-bars{
 .sidebar .sidebar-icon i{
     font-size:18px;
 }
-
+/* Section Score */
+.section-score{
+    height:20vh;
+    padding-top:20px;
+}
+.section-score .col-6 a{
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+.section-score .col-6:first-child{
+    border-right:1px solid silver;
+}
+.score-icon i{
+    font-size:40px;
+}
+.section-score .col-6:first-child .score-icon i{
+    color:#2ecc71;
+}
+.section-score .col-6:last-child .score-icon i{
+    color:#ff4757;
+}
 /* Section steps */
 .section-steps{
     width:100%;
@@ -281,13 +314,13 @@ nav .menu-bars{
 }
 .section-products .card{
     box-shadow:4px 4px 4px rgba(0, 0, 0, 0.21);
+    height:290px;
 }
 .section-products .product-icon{
     height:80px;
 }
 .section-products .card:hover .product-icon i{
     font-size:55px;
-    transition:0.5s;
 }
 /* Section Partners */
 .section-partners{
@@ -331,6 +364,17 @@ footer .footer-links a:hover{
 }
 
 /* MEDIA QUERY */
+@media screen and (max-width: 850px) {
+    .section-products .card{
+        height:320px;
+    }
+    nav .menu-bars{
+        display:block
+    }
+    nav .navbar-navul{
+        display:none;
+    }
+}
 @media screen and (max-width: 600px) {
     .display-4{
         font-size:25px;
@@ -341,10 +385,7 @@ footer .footer-links a:hover{
     .footer .footer-description{
         height:auto;
     }
-    nav .menu-bars{
-        display:block
-    }
-    nav .navbar-navul{
-        display:none;
-    }
+    .section-products .card{
+        height:280px;
+    } 
 }

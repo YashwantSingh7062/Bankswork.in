@@ -11,16 +11,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/personal_loans.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <style>
-        #header-home-loans{
-            height:120vh;
-            background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) ,url('Images/Home_background.jpg');
-            background-position:center;
-            background-size:cover;
-            background-attachment:fixed;
-        }
-        .home-loan-details{
-            background:#dff9fb;
-        }
+        
     </style>
 </head>
 <body>
@@ -37,15 +28,16 @@
     <div class="container registration-form px-md-5">
        <div class="card rellax mx-md-5" data-rellax-speed="2">
           <div class="card-header p-md-4">
+             <div class="registration-step">1</div>
               <h1 class="display-4 text-center"><i class="fas fa-home" style="font-size:50px;"></i> Home Loan Registration</h1>
           </div>
            <div class='card-body'>
-               <form action="personal_loans_eligible.php" method="post">
+               <form action="loans_eligible.php" method="post">
                    <div class="form-group col-auto">
                       <label for="name">Full Name(As per PAN Card)</label>
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fas fa-pencil-alt"></i></div>
+                          <div class="input-group-text"><i class="fas fa-user"></i></div>
                         </div>
                         <input type="text" name="name" id="name" placeholder="Full Name" class="form-control" />
                       </div>
@@ -54,7 +46,7 @@
                       <label for="phone">Mobile Number</label>
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
+                          <div class="input-group-text">+91</div>
                         </div>
                         <input type="number" name="phone" id="phone" placeholder="Mobile Number" class="form-control" />
                       </div>
@@ -330,14 +322,4 @@ Interest rates are 0.25-1% higher than regular housing loan.</td></tr><tr><td>Ho
   </div>
    </section>
     
-    <script src="public/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script src="vendor/rellax-master/rellax.min.js"></script>
-    <script>
-      // Accepts any class name
-      var rellax = new Rellax('.rellax');
-    </script>
-</body>
-</html>
+ <?php include 'partials/footer.php' ?>

@@ -19,6 +19,10 @@
                             <input type="number" class="form-control" placeholder="Enter Your Registered Mobile Number" required>
                           </div>
                         </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="terms" id="terms" />
+                            <label for="terms">Accept terms &amp; condition</label>
+                        </div>
                         <input type="submit" class="btn btn-block my-primary-btn" value="Send OTP"/>
                     </form>
                 </div>
