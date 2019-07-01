@@ -82,17 +82,18 @@ h3{
 }
 
 /* header */
-header{
+#header{
     width:100%;
-    height:80vh;
+    height:66vh;
+    margin-top:110px;
 }
 #header:after{
     content:'';
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
-    height:80vh;
+    height:66vh;
     width:100%;
     position:absolute;
-    top:0;
+    top:110px;
     left:0;
 }
 .header-content{
@@ -104,78 +105,74 @@ header{
     color:white;
     z-index:5;
 }
+/* Both Navbar */
 nav{
     height:70px;
     width:100%;
-    background:transparent;
     position:fixed;
-    top:0px;
-    left:0px;
-    z-index:15;
-    
+    font-family:sans-serif;
 }
 nav .row{
     margin-top:12px;
 }
-nav .logo a{
-    color:white;
+/* First Navabar */
+nav.first-nav {
+    top:0;
+    left:0;
+    z-index:15;
+    background:white;
+}
+nav.first-nav .logo a{
+    color:black;
     margin-top:2px;
 }
-nav .logo i{
+nav.first-nav .logo i{
     font-size:40px; 
 }
-nav .navbar-navul{
+
+nav.first-nav .login-btn{
+    margin-top:6px;
+}
+nav.first-nav .menu-bars i.fa-bars{
+    color:black;
+    font-size:25px;
+    margin-top:7px;
+    display:none;
+}
+/* Second navbar */
+nav.second-nav .row{
+    margin-top:0px;
+    padding:0px 0px;
+}
+nav.second-nav {
+    top:70px;
+    left:0;
+    height:40px;
+    z-index:15;
+    background:linear-gradient(#1e90ff,rgba(30, 144, 255, 0.78));
+}
+nav.second-nav .navbar-navul{
     height:100%;
-    width:95%;
+    width:80%;
     margin:0px auto;
     list-style:none;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between; 
 }
-nav .navbar-navul li{
+nav.second-nav .navbar-navul li{
     height:100%;
-    line-height:50px;
+    line-height:40px;
 }
-nav .navbar-navul li a{
+nav.second-nav .navbar-navul li a{
     color:white;
-    font-size:20px;
+    font-size:16px;
     text-decoration:none;
 }
-nav .navbar-navul li:hover > ul{
-    display:block;
-}
-nav .navbar-navul ul{
-    list-style:none;
-    background:white;
-    padding:5px 15px;
-    display:none;
-}
-nav .navbar-navul ul li{
-    border-bottom:1px solid silver;
-}
-nav .navbar-navul ul li:last-child{
-    border:none;
-}
-nav .navbar-navul ul li a{
-    color:black;
-    font-size:15px;
-    display:block;
-}
-nav .login-btn{
-    margin-top:6px;
-}
-nav .menu-bars i{
-    color:white;
-    font-size:25px;
-    margin-top:7px;
-}
-nav .menu-bars{
-    display:none;
-}
+
 /* SIDEBAR */
 .sidebar{
     height:100vh;
-    width:375px;
+    width:100px;
     background:linear-gradient(#1B9CFC,#0abde3,#48dbfb);
     position:fixed;
     right:-700px;
@@ -368,11 +365,37 @@ footer .footer-links a:hover{
     .section-products .card{
         height:320px;
     }
-    nav .menu-bars{
-        display:block
+    nav.first-nav .menu-bars i.fa-bars{
+        display:block;
     }
-    nav .navbar-navul{
+    nav.first-nav{
+        border-bottom:5px solid;
+        border-image:linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;
+    }
+    nav.second-nav{
         display:none;
+    }
+    header{
+        margin-top:70px;
+    }
+    #header{
+        margin-top:70px;
+    }
+    #header:after{
+        top:70px;
+    }
+    nav.second-nav .navbar-navul{
+        display:none;
+    }
+    .registration-form{
+        top:70%;
+    }
+    #header-personal-loans:after,
+    #header-home-loans:after,
+    #header-car-loans:after,
+    #header-mortgage-loans:after,
+    #header-re-finance-car-loans:after{
+        margin-top:72px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -380,12 +403,15 @@ footer .footer-links a:hover{
         font-size:25px;
     }
     .sidebar{
-        width:100%;
+        width:80%;
     }
     .footer .footer-description{
         height:auto;
     }
     .section-products .card{
         height:280px;
-    } 
+    }
+    .registration-form{
+        top:80%;
+    }
 }

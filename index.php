@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
-<body>
+<?php include 'partials/header.php' ?>
    <?php include 'partials/nav.php' ?>
+   <?php include 'partials/nav2.php' ?>
     
    <!-- HEADER -->
     <header id="header">
@@ -22,13 +8,13 @@
         <div id="imageCarousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="./Images/first_carousel/rupee.jpeg"  style="height:80vh;"alt="First slide">
+              <img class="d-block w-100" src="./Images/first_carousel/rupee.jpeg"  style="height:66vh;"alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="./Images/first_carousel/second.jpg"  style="height:80vh;"alt="Second slide">
+              <img class="d-block w-100" src="./Images/first_carousel/second.jpg"  style="height:66vh;"alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="./Images/first_carousel/third.jpg" style="height:80vh;" alt="Third slide">
+              <img class="d-block w-100" src="./Images/first_carousel/third.jpg" style="height:66vh;" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
@@ -43,7 +29,7 @@
         <div class="header-content">
             <h1 class="display-4">Personal Loans with rates starting at 10.75%</h1>
             <p class="lead mt-3">Loans for everyone</p>
-            <a href="#section-products" class="btn btn-lg btn-outline-primary mt-5 py-2 px-4 py-md-3 px-md-5">Find my loans <i class="fas fa-angle-double-right"></i></a>
+            <button id="navigate_to_loans" class="btn btn-lg btn-outline-primary mt-5 py-2 px-4 py-md-3 px-md-5">Find my loans <i class="fas fa-angle-double-right"></i></button>
         </div>
     </header>
     

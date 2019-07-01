@@ -1,4 +1,4 @@
-/* MENUBAR JAVASCRIPT */
+/* SIDEBAR JAVASCRIPT */
 $("nav .menu-bars").on({
     click : () => {
         $(".sidebar").css({
@@ -14,37 +14,23 @@ $(".sidebar ul li span.sidebar-close").on({
     }
 });
 
-/* SIDEBAR JAVASCRIPT */
+/* UP NAVIGATOR JAVASCRIPT */
 $(document).ready(function(){
     $(window).scroll(() => {
-        if($(window).scrollTop() > 20){
-            $("nav").css({
-                background : "white",
-                "border-bottom" : "5px solid",
-                "border-image":"linear-gradient(to right, #55E6C1 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5",
-                transition:'0.5s'
-            });
-            $("nav .logo a").css("color","black");
-            $("nav .menu-bars i").css("color","black");
-            $("nav .navbar-navul li a").css("color","black");   
-        }
-        else{
-            $("nav").css({
-                background : "transparent",
-                "border-bottom" : "none",
-                "border-image":"none",
-                transition:'0.5s'
-            });
-            $("nav .logo a").css("color","white");
-            $("nav .menu-bars i").css("color","white");
-            $("nav .navbar-navul li a").css("color","white");
-            $("nav .navbar-navul ul li a").css("color","black");
-        }
-        if($(window).scrollTop() > 620 && $(window).scrollTop() < 1986){
+        if($(window).scrollTop() > 620 && $(window).scrollTop() < 2500){
             $(".up-navigator-button").css({visibility:"visible"})
         }
         else{
             $(".up-navigator-button").css({visibility:"hidden"})
         }
     })
+})
+
+/* LOAD JAVASCRIPT */
+
+$(document).ready(() => {
+    $("#navigate_to_loans").click(()=>{
+        window.location.href="index.php#section-products";
+    });
+    $("#navigate_to_loans").trigger("click");
 })

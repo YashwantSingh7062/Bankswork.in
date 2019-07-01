@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Personal Loans</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="public/css/personal_loans.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-</head>
-<body>
+<?php include 'partials/header.php' ?>
        <?php include 'partials/nav.php'; ?> 
+       <?php include 'partials/nav2.php'; ?> 
     <?php include 'partials/sidebar.php' ?>
     <header id="header-re-finance-car-loans">
       <div class="container text-center rellax" data-rellax-speed="-4">
@@ -23,10 +11,17 @@
       </div>   
     </header>
     <div class="container registration-form px-md-5">
-       <div class="card rellax mx-md-5" data-rellax-speed="2">
+       <div class="card mx-md-5">
           <div class="card-header p-md-4">
-             <div class="registration-step">1</div>
-              <h1 class="display-4 text-center"><i class="fas fa-car" style="font-size:50px;"></i> Re-finance vehicle loan Registration</h1>
+            <div class="registration-step">1</div>
+            <div class='row my-2'>
+                <div class="col-4 col-md-2 offset-md-1 text-center">
+                     <i class="fas fa-car" style="font-size:60px;"></i>
+                </div>
+                <div class='col-8 text-left'>
+                    <h1 class="display-4"> User Car loan Registration</h1>
+                </div>
+            </div>    
           </div>
            <div class='card-body'>
                <form action="loans_eligible.php" method="post">
@@ -71,27 +66,49 @@
                        </div> 
                    </div>
                    <div class="form-group col-auto">
-                      <label for="salary">Salary Amount</label>
+                      <label for="address_ownership">Address Ownership</label>
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
+                          <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
                         </div>
-                        <input type="number" name="salary" id="salary" placeholder="Amount" class="form-control" />
-                      </div>
+                       <select name="address_ownership" id="address_ownership" class="form-control">
+                           <option selected disabled>---Select Address type----</option>
+                           <option value="Rented">Rented</option>
+                           <option value="Self Owned">Self Owned</option>
+                       </select>
+                       </div> 
                    </div>
                    <div class="form-group col-auto">
-                      <label for="pin">PIN Code</label>
+                      <label for="vehicle_name">Vehicle Name</label>
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fas fa-map-pin"></i></div>
+                          <div class="input-group-text"><i class="fas fa-car"></i></div>
                         </div>
-                        <input type="number" name="pin" id="pin" placeholder="PIN Code" class="form-control" />
+                        <input type="text" name="vehicle_name" id="vehicle_name" placeholder="Ex. Hyundai Grand i10" class="form-control" />
                       </div>
+                    </div>
+                    <div class="form-group col-auto">
+                      <label for="vehicle_type">Vehicle Type</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-car"></i></div>
+                        </div>
+                       <select name="vehicle_type" id="vehicle_type" class="form-control">
+                           <option selected disabled>---Select Vehicle type----</option>
+                           <option value="Commercial">Commercial</option>
+                           <option value="Private">Private</option>
+                       </select>
+                       </div> 
                    </div>
                    <div class="form-group col-auto">
-                      <label for="aadhar">Aadhar card scan</label><br>
-                       <input type="file" name="aadhar" id="aadhar"/>
-                   </div>
+                      <label for="vehicle_model_year">Vehicle Model Year</label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                        </div>
+                        <input type="text" name="vehicle_model_year" id="vehicle_model_year" placeholder="Ex. 2015" class="form-control" />
+                      </div>
+                    </div>
                    <div class="form-group col-auto">
                        <input type="submit" class="btn my-primary-btn btn-block"/>
                    </div> 
@@ -101,7 +118,7 @@
     </div>
     <?php include 'partials/login-modal.php'; ?>
     <section class="car-finance-detail">
-        <div class="container">
+        <div class="container pt-md-5">
             <div class="content-area col-sm-9">
                 <p>As per the current rates, HDFC Bank,Axis Bank,Bank of Maharashtra offers the lowest car loan interest rate of 9.25%. These rates can vary depending upon the company you are working with, loan amount you have applied for, value of the car and your repayment capacity. Higher the loan amount, lower will be the rate of interest.</p>
                 <h3>Car Loan Rates</h3>

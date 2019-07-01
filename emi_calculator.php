@@ -3,7 +3,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="description" content="Easy Loans available instantly at Bankswork. Our loans help meets all your financial needs at low-interest rates.">
+    <meta name="keywords" content="loans,loan,getLoan,bankswork,Personal Loan, Home Loan, Mortgage Loan, Car Loan, User Car Loan">
+    <meta name="author" content="Yashwant Singh">
+    <title>Emi Calculator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -25,6 +28,8 @@
 </head>
 <body style='background:linear-gradient(#17c0eb,#18dcff);'>
    <?php include 'partials/nav.php' ?>
+   <?php include 'partials/nav2.php' ?>
+   <?php include 'partials/login-modal.php' ?>
     <?php include 'partials/sidebar.php' ?>
     
      <!-- EMI CALCULATOR -->
@@ -108,7 +113,7 @@
                                         <div class="col-6">
                                             <div class="input-group mb-2">
                                   <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fas fa-percentage"></i></div>
+                                    <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
                                   </div>
                                   <input type="number" name="emi_month_payment" id="emi_month_payment" value="4660" class="form-control" />
                                   <input type="number" id="emi_month_payment_hidden" hidden />
@@ -174,16 +179,4 @@
                     </form>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function(){
-            $("#emi_amount , #emi_year").on({
-                change : function(){
-                    var int = $("#emi_amount").val()+(1+(10.75/4));
-                    console.log(int);
-                    $("#emi_interest").val(int)
-                }
-            })
-        })
-    </script>
 <?php include 'partials/footer.php' ; ?>

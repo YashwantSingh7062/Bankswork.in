@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-    $("nav").css({"background":"linear-gradient(#00cec9,#7ed6df)"});
-    $("nav .logo a").css("color","black");
     $("nav .menu-bars i").css("color","black");
     $("nav .navbar-navul li a").css("color","black");
     $("nav .navbar-navul ul li a").css("color","black");

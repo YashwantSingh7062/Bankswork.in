@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Personal Loans</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="public/css/personal_loans.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-</head>
-<body>
+<?php include 'partials/header.php' ?>
        <?php include 'partials/nav.php'; ?> 
+       <?php include 'partials/nav2.php'; ?> 
     <?php include 'partials/sidebar.php' ?>
     <header id="header-mortgage-loans">
       <div class="container text-center rellax" data-rellax-speed="-4">
@@ -23,10 +11,17 @@
       </div>   
     </header>
     <div class="container registration-form px-md-5">
-       <div class="card rellax mx-md-5" data-rellax-speed="2">
+       <div class="card mx-md-5">
           <div class="card-header p-md-4">
-             <div class="registration-step">1</div>
-              <h1 class="display-4 text-center"><i class="fas fa-hotel" style="font-size:50px;"></i> Mortgage Loan  Registration</h1>
+            <div class="registration-step">1</div>
+            <div class='row my-2'>
+                <div class="col-4 col-md-2 offset-md-1 text-center">
+                     <i class="fas fa-hotel" style="font-size:60px;"></i>
+                </div>
+                <div class='col-8 text-left'>
+                    <h1 class="display-4"> Mortgage Loan  Registration</h1>
+                </div>
+            </div>
           </div>
            <div class='card-body'>
                <form action="loans_eligible.php" method="post">
@@ -71,15 +66,6 @@
                        </div> 
                    </div>
                    <div class="form-group col-auto">
-                      <label for="salary">Salary Amount</label>
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text"><i class="fas fa-rupee-sign"></i></div>
-                        </div>
-                        <input type="number" name="salary" id="salary" placeholder="Amount" class="form-control" />
-                      </div>
-                   </div>
-                   <div class="form-group col-auto">
                       <label for="pin">PIN Code</label>
                       <div class="input-group mb-2">
                         <div class="input-group-prepend">
@@ -87,10 +73,6 @@
                         </div>
                         <input type="number" name="pin" id="pin" placeholder="PIN Code" class="form-control" />
                       </div>
-                   </div>
-                   <div class="form-group col-auto">
-                      <label for="aadhar">Aadhar card scan</label><br>
-                       <input type="file" name="aadhar" id="aadhar"/>
                    </div>
                    <div class="form-group col-auto">
                        <input type="submit" class="btn my-primary-btn btn-block"/>
